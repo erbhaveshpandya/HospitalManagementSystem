@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.MasterPage.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'HospitalManagementSystem';
+export class MasterPageComponent {
 }
