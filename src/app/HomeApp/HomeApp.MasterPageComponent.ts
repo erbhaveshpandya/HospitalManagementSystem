@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.MasterPage.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './HomeApp.MasterPage.html'
 })
 export class MasterPageComponent {
 }

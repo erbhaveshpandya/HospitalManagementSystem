@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './app.HomeComponent';
-import { PatientComponent } from './app.PatientComponent';
+import { HomeComponent } from './HomeApp.HomeComponent';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'Home', component:HomeComponent},
-  {path: 'Add', component:PatientComponent}
+  {path: 'Patient', loadChildren:()=> import('../PatientApp/PatientApp.module').then(m=>m.PatientModule)}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class HomeAppRouting { }
