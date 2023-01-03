@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Patient} from './app-model'
+import {Patient} from './PatientApp-model'
 
 @Component({
   templateUrl: './PatientApp.Patient.html'
@@ -7,4 +7,5 @@ import {Patient} from './app-model'
 export class PatientComponent {
   title = 'HospitalManagementSystem';
   PatientObj:Patient = new Patient();
+  problem:string = "Test";
 }

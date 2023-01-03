@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PatientAppRoutingModule } from './PatientApp-routing.module';
 import { PatientComponent } from './PatientApp.PatientComponent';
 
@@ -11,7 +11,8 @@ import { PatientComponent } from './PatientApp.PatientComponent';
   imports: [
     CommonModule,
     FormsModule,       
-    PatientAppRoutingModule
+    PatientAppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [PatientComponent]

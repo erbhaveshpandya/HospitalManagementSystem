@@ -1,6 +1,11 @@
-Patient name : <input [(ngModel)]="PatientObj.name" type="text"> <br>
-Age : <input [(ngModel)]="PatientObj.age" type="text"> <br>
-Amount : <input [(ngModel)]="PatientObj.amount" type="text"> <br>
-Problem : <input [(ngModel)]="PatientObj.problem" type="text"><br>
+<form [formGroup]="PatientObj.formPatientGroup">
+Patient name : <input formControlName="PatientNameControl" [(ngModel)]="PatientObj.name" type="text">
+<div [hidden]="!(PatientObj.formPatientGroup.controls['PatientNameControl'].hasError('required'))">Patientname is required</div> <br>
+Age : <input [ngModelOptions]="{standalone: true}" [(ngModel)]="PatientObj.age" type="text"> <br>
+Amount : <input [ngModelOptions]="{standalone: true}" [(ngModel)]="PatientObj.amount" type="text"> <br>
+Problem : <input [ngModelOptions]="{standalone: true}" [value]="problem" [(ngModel)]="PatientObj.problem" type="text"><br>
 
 <b>{{PatientObj.name}}</b>
+
+<input [disabled]="!(PatientObj.formPatientGroup.valid)" type="button" value="Add" />
+</form>
