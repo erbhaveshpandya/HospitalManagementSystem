@@ -11,5 +11,6 @@ export class Patient
         var _builder = new FormBuilder();
         this.formPatientGroup = _builder.group({});
         this.formPatientGroup.addControl("PatientNameControl",new FormControl('',Validators.required))
+        this.formPatientGroup.addControl("ProblemControl",new FormControl('',Validators.required))
     }
 }

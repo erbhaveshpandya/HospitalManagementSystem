@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './HomeApp.MasterPage.html'
 })
 export class MasterPageComponent {
+  
 }

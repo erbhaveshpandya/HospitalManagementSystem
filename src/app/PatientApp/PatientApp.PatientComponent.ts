@@ -7,5 +7,10 @@ import {Patient} from './PatientApp-model'
 export class PatientComponent {
   title = 'HospitalManagementSystem';
   PatientObj:Patient = new Patient();
-  problem:string = "Test";
+
+  haserror(typeofvalidator:string,controlname:string) : boolean
+  {
+    return this.PatientObj.formPatientGroup.controls[controlname].hasError(typeofvalidator);
+  }
+
 }

@@ -1,9 +1,14 @@
 <form [formGroup]="PatientObj.formPatientGroup">
 Patient name : <input formControlName="PatientNameControl" [(ngModel)]="PatientObj.name" type="text">
 <div [hidden]="!(PatientObj.formPatientGroup.controls['PatientNameControl'].hasError('required'))">Patientname is required</div> <br>
+
 Age : <input [ngModelOptions]="{standalone: true}" [(ngModel)]="PatientObj.age" type="text"> <br>
+
 Amount : <input [ngModelOptions]="{standalone: true}" [(ngModel)]="PatientObj.amount" type="text"> <br>
-Problem : <input [ngModelOptions]="{standalone: true}" [value]="problem" [(ngModel)]="PatientObj.problem" type="text"><br>
+
+
+Problem : <input formControlName="ProblemControl"  [(ngModel)]="PatientObj.problem" type="text"><br>
+<div [hidden]="!(haserror('required','ProblemControl'))">Problem is required</div> <br>
 
 <b>{{PatientObj.name}}</b>
 

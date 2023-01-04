@@ -1,7 +1,12 @@
-import { Component } from '@angular/core';
-
+import { Component,Injector } from '@angular/core';
+import{BaseLogger} from '../Utility/CustomerApp.logger';
 @Component({
   templateUrl: './HomeApp.Home.html'
 })
 export class HomeComponent {
+  LogObj : BaseLogger = null;
+  constructor(_Injector:Injector) {
+    this.LogObj = _Injector.get("1");
+     this.LogObj.Log();
+}
 }
