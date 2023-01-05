@@ -7,7 +7,7 @@ import { MasterPageComponent } from './HomeApp.MasterPageComponent';
 import { HomeAppRouting } from './HomeApp-routing.module';
 import { NgIfComponentComponent } from '../ng-if-component/ng-if-component.component';
 import { NgForComponentComponent } from '../ng-for-component/ng-for-component.component';
-import { BaseLogger, ConsoleLogger, DBLogger } from '../Utility/CustomerApp.logger';
+import { BaseLogger, ConsoleLogger, DBLogger } from '../Utility/CustomerApp.Logger';
 
 var providercollection:any = [];
 providercollection.push({provide:"1",useClass:DBLogger});

@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import{BaseLogger} from '../Utility/CustomerApp.logger'
+import{BaseLogger} from '../Utility/CustomerApp.Logger'
 
 @Component({
   selector: 'app-ng-for-component',

@@ -1,5 +1,5 @@
 import { Component,Injector } from '@angular/core';
-import{BaseLogger} from '../Utility/CustomerApp.logger';
+import { BaseLogger } from '../Utility/CustomerApp.Logger';
 @Component({
   templateUrl: './HomeApp.Home.html'
 })
