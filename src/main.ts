@@ -1,3 +1,4 @@
+import './polyfills';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { HomeModule } from './app/HomeApp/HomeApp.module';
 
